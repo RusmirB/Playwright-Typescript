@@ -1,0 +1,19 @@
+{
+  "name": "playwright-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tests:chrome": "cross-env test_env=development playwright test --config=playwright.config.ts --project=chromium",
+    "tests:headed": "cross-env test_env=development playwright test --config=playwright.config.ts --project=chromium --headed",
+    "tests:staging": "cross-env test_env=staging playwright test --config=playwright.config.ts --project=chromium"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.37.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1"
+  }
+}
